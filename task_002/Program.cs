@@ -15,7 +15,7 @@ double[] FindIntersectionPoint(double[,] linearFunctions)
     double k1 = linearFunctions[0,1];
     double b2 = linearFunctions[1,0];
     double k2 = linearFunctions[1,1];
-    double x = (b2 - b1) / (k1 - k2);
+    double x = (b2 - b1) / (k1 - k2); // NOTE: (k1 - k2) cannot be equal 0, check this condition before calling this method!
     intersectionPointXY[0] = x;
     double y = k1 * x + b1;
     intersectionPointXY[1] = y;

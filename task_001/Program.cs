@@ -5,7 +5,7 @@
 void OutputResult(int[] numbers, int counter)
 {
     Console.Write("Количество чисел больше нуля в массиве ");
-    Console.Write("[{0}]", string.Join(", ", numbers));
+    Console.Write("{0}", string.Join(", ", numbers));
     Console.Write(" -> " + counter);
     Console.WriteLine(); // removes the trailing % symbol in the terminal
 }
