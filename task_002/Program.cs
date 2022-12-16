@@ -15,7 +15,7 @@ void OutputIntersectionPointCoordinates(double[] intersectionPoint)
     }
     
     Console.Write("Точка пересечения двух прямых: ");
-    Console.Write("[{0}]", string.Join(", ", intersectionPointRounded));
+    Console.Write("({0})", string.Join("; ", intersectionPointRounded));
     Console.WriteLine(); // removes the trailing % symbol in the terminal
 }
 
