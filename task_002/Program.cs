@@ -29,7 +29,7 @@ bool IsParallel(double[,] linearFunctions)
     return (k1 - k2 == 0);
 }
 
-double[,] GetSlopeAndYInterceptData()
+double[,] GetSlopeAndYIntercectData()
 {
     double[,] linearFunctions = new double[2,2];
 
@@ -50,7 +50,7 @@ double[,] GetSlopeAndYInterceptData()
             else
             {
                 Console.WriteLine("Неправильный тип данных, повторите ввод!");
-                return GetSlopeAndYInterceptData();
+                return GetSlopeAndYIntercectData();
             }
         }
     }
@@ -60,7 +60,7 @@ double[,] GetSlopeAndYInterceptData()
 
 Console.Clear();
 double[,] linearFunctions = new double[2,2];
-linearFunctions = GetSlopeAndYInterceptData();
+linearFunctions = GetSlopeAndYIntercectData();
 if (!IsParallel(linearFunctions))
 {
     double[] intersectionPoint = new double[2];
