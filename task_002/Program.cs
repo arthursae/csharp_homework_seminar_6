@@ -6,7 +6,7 @@ void OutputIntersectionPointCoordinates(double[] intersectionPoint)
     int roundTo = 4; // Four decimal points
     double[] intersectionPointRounded = new double[2];
     int i = 0;
-    
+
     foreach(double point in intersectionPoint)
     {
         double pointRounded = Math.Round(point, roundTo);
@@ -29,6 +29,7 @@ double[] FindIntersectionPoint(double[,] linearFunctions)
     double x = (b2 - b1) / (k1 - k2); // NOTE: (k1 - k2) cannot be equal 0, check this condition before calling this method!
     intersectionPointXY[0] = x;
     double y = k1 * x + b1;
+    double y = k2 * x + b2; // equally correct
     intersectionPointXY[1] = y;
     return intersectionPointXY;
 }
