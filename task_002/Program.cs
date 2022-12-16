@@ -6,6 +6,7 @@ void OutputIntersectionPointCoordinates(double[] intersectionPoint)
     int roundTo = 4; // Four decimal points
     double[] intersectionPointRounded = new double[2];
     int i = 0;
+    
     foreach(double point in intersectionPoint)
     {
         double pointRounded = Math.Round(point, roundTo);
@@ -13,7 +14,6 @@ void OutputIntersectionPointCoordinates(double[] intersectionPoint)
         i++;
     }
     
-
     Console.Write("Точка пересечения двух прямых: ");
     Console.Write("[{0}]", string.Join(", ", intersectionPointRounded));
     Console.WriteLine(); // removes the trailing % symbol in the terminal
